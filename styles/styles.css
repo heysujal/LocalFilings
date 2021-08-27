@@ -21,44 +21,34 @@ body {
 }
 
 /* l-side */
-.l-side, .r-side{
-    flex: 1;
-    flex-basis: 50%;
+.l-side,
+.r-side {
+  flex: 1;
+  flex-basis: 50%;
 }
 /* r-side */
 
-.l-side,.r-side {
-  
+.l-side,
+.r-side {
   padding: 40px 60px;
-   
-   
- 
 }
 
 .reg-form {
   background-color: #ffd482;
   padding: 50px 50px;
- 
-  
-}
- 
-.reg-form form input{
-    background-color: #ffd482;
-    border: 1px solid black;
 }
 
-
-
+.reg-form form input {
+  background-color: #ffd482;
+  border: 1px solid black;
+}
 
 /* Acheivemnet section */
-#achvmnt{
-     background-color:  #F5E9D7;
-     padding: 50px 250px;
+#achvmnt {
+  background-color: #f5e9d7;
+  padding: 50px 250px;
 }
 
-.box{
-    flex: 1;
-    
+.box {
+  flex: 1;
 }
-
-
