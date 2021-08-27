@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/svg/white-bg.svg");
+  background-color: #ff832a;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* l-side */
+.l-side, .r-side{
+    flex: 1;
+    flex-basis: 50%;
+}
+/* r-side */
+
+.l-side,.r-side {
+  
+  padding: 40px 60px;
+   
+   
+ 
+}
+
+.reg-form {
+  background-color: #ffd482;
+  padding: 50px 50px;
+ 
+  
+}
+ 
+.reg-form form input{
+    background-color: #ffd482;
+    border: 1px solid black;
+}
+
+
+
+
+/* Acheivemnet section */
+#achvmnt{
+     background-color:  #F5E9D7;
+     padding: 50px 250px;
+}
+
+.box{
+    flex: 1;
+    
+}
+
+
