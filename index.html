@@ -12,19 +12,35 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS stylesheet -->
+
     <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/efd71d3ed7.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Registration Page</title>
   </head>
   <body>
     <main>
       <div class="hero d-flex flex-column flex-md-row">
         <div class="l-side">
-          <img 
+          <img
             class="img-fluid mb-5"
             src="img/png/LocalFilings logo.png"
             alt="logo"
           />
-       
 
           <h1 class="fw-bold" style="color: #ff832a">Become Franchise</h1>
           <h2 class="fw-bold" style="color: #000685">
@@ -32,20 +48,19 @@
           </h2>
 
           <img class="img-fluid" src="img/svg/group.svg" alt="group-img" />
-       
         </div>
         <div class="r-side">
           <!-- Registration form -->
 
           <div class="reg-form rounded">
             <h1 class="fw-bold pb-3">Registration Form</h1>
-            <form class="row g-3">
+            <form id="regForm" class="row g-3">
               <div class="col-12">
                 <label for="fname" class="form-label">Full Name</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="fname"
+                  id="fullName"
                   placeholder="Rakesh"
                 />
               </div>
@@ -119,7 +134,7 @@
               </div>
 
               <div class="d-grid gap-2 col-12 mx-auto">
-                <button class="btn btn-dark btn-lg send-btn">
+                <button type="submit" class="btn btn-dark btn-lg send-btn">
                   Become Franchise Now
                 </button>
               </div>
@@ -195,90 +210,226 @@
         </div>
       </div>
 
-      <hr style="width: 60%;margin: 20px auto 0 auto;">
+      <hr style="width: 60%; margin: 20px auto 0 auto" />
     </section>
 
     <!-- FAQ Section -->
 
     <section id="faq">
+      <div class="faq">
+        <h1 class="fw-bold" style="color: #000685; text-decoration: underline">
+          FAQ
+        </h1>
 
-       <div class="faq">
-       
-<h1 class="fw-bold" style="color: #000685;text-decoration: underline;">FAQ</h1>
+        <!-- Accordion -->
 
-
-<!-- Accordion -->
-
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <span class="h4" style="color: #929292;margin-right: 10px;">Q. </span>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, deleniti.
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-       <img class="img-fluid" src="img/svg/arrow.svg" alt="arrow-img"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, deleniti.
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <span class="h4" style="color: #929292; margin-right: 10px"
+                  >Q.
+                </span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+                deleniti.
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <img
+                  class="img-fluid"
+                  src="img/svg/arrow.svg"
+                  alt="arrow-img"
+                />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+                deleniti.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <span class="h4" style="color: #929292; margin-right: 10px"
+                  >Q.
+                </span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+                deleniti.
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <img
+                  class="img-fluid"
+                  src="img/svg/arrow.svg"
+                  alt="arrow-img"
+                />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+                deleniti.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <span class="h4" style="color: #929292; margin-right: 10px"
+                  >Q.
+                </span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+                deleniti.
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <img
+                  class="img-fluid"
+                  src="img/svg/arrow.svg"
+                  alt="arrow-img"
+                />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+                deleniti.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-       <span class="h4" style="color: #929292;margin-right: 10px;">Q. </span>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, deleniti.
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-       <img class="img-fluid" src="img/svg/arrow.svg" alt="arrow-img"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, deleniti.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <span class="h4" style="color: #929292;margin-right: 10px;">Q. </span>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, deleniti.
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <img class="img-fluid" src="img/svg/arrow.svg" alt="arrow-img"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, deleniti.
-      </div>
-    </div>
-  </div>
-</div>
-
-       </div>
     </section>
 
-
     <!-- Pagination -->
- <section 
- id="pagination" class="container">
+    <section id="pagination" class="container">
+      <nav aria-label="...">
+        <ul class="pagination justify-content-end">
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">1</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+        </ul>
+      </nav>
+    </section>
 
-    <nav aria-label="...">
-  <ul class="pagination justify-content-end">
-    <li class="page-item active" aria-current="page">
-      <span class="page-link">1</span>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-  </ul>
-</nav>
-    
-</section>
-    
-  
- 
+    <!-- Form modal  -->
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
 
-  
-
-
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Coming Soon</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              style="width: 100%; height: 100%"
+              src="popup.html"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Saving form data to Spreadsheet -->
+    <script>
+      const regForm = document.querySelector("#regForm");
+      regForm.addEventListener("submit", () => {
+        event.preventDefault();
+        const fullName = document.querySelector("#fullName");
+        const email = document.querySelector("#email");
+        const phone = document.querySelector("#phone");
+        const qual = document.querySelector("#qual");
+        const state = document.querySelector("#state");
+        const city = document.querySelector("#city");
+        const district = document.querySelector("#district");
+        const pincode = document.querySelector("#pincode");
+
+        const url =
+          "https://docs.google.com/forms/u/0/d/e/1FAIpQLSecZafUMyX1f7bSLyFA6SPUydZgsGA9KMtSZTHD5rbE23hYlg/formResponse";
+        fetch(url, {
+          method: "POST",
+          mode: "no-cors",
+          body: `entry.871115680=${fullName.value}&entry.1674383746=${phone.value}&entry.2040954737=${email.value}&entry.1950931961=${qual.value}&entry.850084149=${state.value}&entry.1755185299=${district.value}&entry.1732333113=${city.value}&entry.1203784172=${pincode.value}&dlut=1630327826558&fvv=1&draftResponse=%5Bnull%2Cnull%2C%226039705974122733004%22%5D&pageHistory=0&fbzx=6039705974122733004`,
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        }).then((response) => {
+          // console
+          console.log("Data submitted successfully");
+          fullName.value = "";
+          email.value = "";
+          phone.value = "";
+          qual.value = "";
+          state.value = "";
+          city.value = "";
+          district.value = "";
+          pincode.value = "";
+        });
+      });
+    </script>
   </body>
 </html>
