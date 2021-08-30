@@ -11,9 +11,9 @@ body {
 }
 
 .hero {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   background-image: url("../img/svg/white-bg.svg");
   background-color: #ff832a;
   background-size: contain;
@@ -28,9 +28,11 @@ body {
 }
 /* r-side */
 
-.l-side,
-.r-side {
+.l-side {
   padding: 40px 60px;
+}
+.r-side {
+  padding: 40px 100px;
 }
 
 .reg-form {
@@ -51,4 +53,18 @@ body {
 
 .box {
   flex: 1;
+}
+
+#faq {
+  padding: 30px 60px;
+}
+
+#pagination nav {
+  /* float: right; */
+}
+
+/* changing default pagination color */
+.page-item.active .page-link {
+  background-color: #ff832a;
+  border-color: #ff832a;
 }
