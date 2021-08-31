@@ -118,6 +118,9 @@ main {
   background-color: #000685;
   color: white;
 }
+.card:nth-child(3) .card-body p.desc{
+    color: white;
+}
 
 /* Media Queries */
 @media (max-width: 576px) {
