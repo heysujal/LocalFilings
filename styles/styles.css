@@ -1,13 +1,14 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+   
 }
 html {
   overflow-x: hidden;
 }
 body {
   overflow-x: hidden;
+  font-family: 'Poppins';
 }
 
 .hero {
@@ -21,18 +22,18 @@ body {
 }
 
 /* l-side */
-.l-side,
-.r-side {
+.hero .l-side,
+.hero .r-side {
   flex: 1;
   flex-basis: 50%;
 }
 /* r-side */
 
-.l-side {
+.hero .l-side {
   padding: 40px 60px;
 }
-.r-side {
-  padding: 40px 100px;
+.hero .r-side {
+  padding: 40px 60px;
 }
 
 .reg-form {
@@ -53,6 +54,7 @@ body {
 
 .box {
   flex: 1;
+  flex-basis: 100%;
 }
 
 #faq {
@@ -67,4 +69,55 @@ body {
 .page-item.active .page-link {
   background-color: #ff832a;
   border-color: #ff832a;
+}
+
+
+
+@media (max-width: 576px) {
+  
+  
+ .hero .r-side {
+  padding: 40px 20px;
+}
+   
+  .reg-form {
+    padding: 50px 20px;
+  }
+
+  #achvmnt {
+    padding: 50px 20px;
+  }
+  
+  
+
+
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero .r-side {
+  padding: 40px 20px;
+}
+
+  #achvmnt {
+    padding: 50px 20px;
+  }
+ 
+
+
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .hero .r-side {
+  padding: 40px 20px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+ 
+}
+
+@media (min-width: 1201px) and (max-width: 2560px) {
+ 
 }
