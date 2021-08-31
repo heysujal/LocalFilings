@@ -61,10 +61,7 @@ body {
   padding: 30px 20px;
 }
 
-#pagination nav {
-  /* float: right; */
-}
-
+ 
 /* changing default pagination color */
 .page-item.active .page-link {
   background-color: #ff832a;
