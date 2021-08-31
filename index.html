@@ -22,7 +22,7 @@
 
     <!-- Custom CSS stylesheet -->
 
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/index.css" />
 
     <!-- font Awesome -->
     <script
@@ -30,401 +30,190 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Registration Page</title>
+    <title>Home</title>
   </head>
   <body>
-    <main>
-      <div class="hero d-flex flex-column flex-md-row">
-        <div class="l-side">
+    <!-- Navbar starts -->
+
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
           <img
-          id="logo"
-            class="img-fluid mb-5"
-            src="img/png/LocalFilings logo.png"
-            alt="logo"
+            class="img-fluid"
+            src="./img/svg/LocalFilings-logo.svg"
+            alt=""
+            width="100"
+            height="70"
           />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
 
-          <h1  class="fw-bold" >Become Franchise</h1>
-          <h2 class="fw-bold" style="color: #000685">
-            #1 Automated technology driven business service platform
-          </h2>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact </a>
+            </li>
 
-          <img class="img-fluid" src="img/svg/group.svg" alt="group-img" />
+            <button id="join-now" class="btn">
+              JOIN US &nbsp<i class="fas fa-arrow-right"></i>
+            </button>
+          </ul>
         </div>
+      </div>
+    </nav>
+    <!-- Navbar ends -->
+    <!-- Main -->
+
+    <main>
+      <div class="container d-flex flex-column flex-md-row align-items-center">
+        <div class="l-side">
+          <h1 class="fw-bold">
+            We are a <span style="color: #000685">result</span> driven team
+          </h1>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus orci
+            venenatis consectetur vel rhoncus dictum eget. Vitae, orci, nunc
+            tristique sit purus ornare. Dolor arcu dolor vel commodo, iaculis
+            pharetra.
+          </p>
+
+          <a href="/registration.html" class="btn btn-lg get-started"
+            >Get Started</a
+          >
+          <a href="/registration.html" class="btn btn-lg learn-more"
+            >Learn more</a
+          >
+        </div>
+
         <div class="r-side">
-          <!-- Registration form -->
-
-          <div class="reg-form rounded">
-            <h1 class="fw-bold pb-3">Registration Form</h1>
-            <form id="regForm" class="row g-3">
-              <div class="col-12">
-                <label for="fname" class="form-label">Full Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="fullName"
-                  placeholder="Rakesh"
-                />
-              </div>
-              <div class="col-12">
-                <label for="phone" class="form-label">Phone Number</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="phone"
-                  placeholder="9743465468"
-                />
-              </div>
-              <div class="col-12">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="example@gmail.com"
-                />
-              </div>
-
-              <div class="col-12">
-                <label for="qual" class="form-label"
-                  >Highest Qualification</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="qual"
-                  placeholder="Qualification"
-                />
-              </div>
-
-              <div class="col-6">
-                <label for="state" class="form-label">State</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="state"
-                  placeholder="Rajasthan"
-                />
-              </div>
-              <div class="col-6">
-                <label for="district" class="form-label">District</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="district"
-                  placeholder="Alwar"
-                />
-              </div>
-
-              <div class="col-6">
-                <label for="city" class="form-label">Nearest City</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="city"
-                  placeholder="Alwar"
-                />
-              </div>
-              <div class="col-6">
-                <label for="pincode" class="form-label">Pincode</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="pincode"
-                  placeholder="301001"
-                />
-              </div>
-
-              <div class="d-grid gap-2 col-12 mx-auto">
-                <button type="submit" class="btn btn-dark btn-lg send-btn">
-                  Become Franchise Now
-                </button>
-              </div>
-            </form>
-          </div>
+          <img class="img-fluid" src="img/svg/home-img.svg" alt="home-img" />
         </div>
       </div>
     </main>
 
-    <!-- Achivements -->
+    <!-- Services -->
 
-    <section id="achvmnt">
-      <div class="stats d-flex flex-column flex-md-row justify-content-around align-items-center">
-        <!-- experience -->
-        <div class="box">
-          <h1 class="fw-bold">Our 4 years of achievements</h1>
-          <p>With our super powers we have reached this</p>
-        </div>
+    <section class="container" id="services">
+      <!-- title -->
+<div class="services-title"">
+  <hr style="display:inline-block;width: 20%;color:  #FF832A;;"> &nbsp&nbsp&nbsp
+  <h1 style="display:inline;color: #000685; ">Our Services</h1>&nbsp&nbsp&nbsp
+  <hr style="display:inline-block;width: 20%;color: #FF832A;">
+</div>
 
-        <!-- achievments -->
-        <div class="box d-flex justify-content-around">
-          <!-- row1 -->
 
-          <div>
-            <div class="d-flex">
-              <div>
-                <img src="img/svg/stat1.svg" alt="stat1-img" />
-              </div>
-              &nbsp;
+<!-- cards -->
+<div class="service-cards">
 
-              <div class="d-flex flex-column">
-                <h3>50+</h3>
-                <p>Experts</p>
-              </div>
-            </div>
+  <div class="card">
+  <div class="card-body">
 
-            <div class="d-flex">
-              <div>
-                <img src="img/svg/feat1.svg" alt="stat1-img" />
-              </div>
 
-              &nbsp; &nbsp;
-              <div class="d-flex flex-column">
-                <h3>150+</h3>
-                <p>Franchises across India</p>
-              </div>
-            </div>
-          </div>
+     <img class="img-fluid"  src="img/svg/icons/company .svg" alt="company-img">
+    <p class="fw-bold">Company registrations</p>
+    
+    <hr style="height:3px ;width: 30%;background-color: #808080;">
+    <p class="desc">The gradual accumulation of 
+information about atomic and 
+small-scale behaviour...</p> 
+  </div>
 
-          <!-- row 2 -->
-          <div>
-            <div class="d-flex">
-              <div>
-                <img src="img/svg/feat1.svg" alt="stat1-img" />
-              </div>
-              &nbsp; &nbsp;
-              <div class="d-flex flex-column">
-                <h3>400+</h3>
-                <p>Business Services</p>
-              </div>
-            </div>
-            <div class="d-flex">
-              <div>
-                <img src="img/svg/feat2.svg" alt="stat1-img" />
-              </div>
-              &nbsp; &nbsp;
-              <div class="d-flex flex-column">
-                <h3>0</h3>
-                <p>Earn Lifetime</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+   
+  </div>
+  <div class="card">
+<div class="card-body">
 
-      <hr style="width: 60%; margin: 20px auto 0 auto" />
+   <img class="img-fluid"  src="img/svg/icons/gst.svg" alt="company-img">
+    <p class="fw-bold">GST filings</p>
+      <hr   style="height:3px ;width: 30%;background-color: #808080;">
+    <p class="desc">The gradual accumulation of 
+information about atomic and 
+small-scale behaviour...</p> 
+</div>
+   
+  </div>
+  <div class="card">
+<div class="card-body">
+
+   <img class="img-fluid"  src="img/svg/icons/ITR.svg" alt="company-img">
+    <p class="fw-bold">ITR Returns 
+</p>
+<div style="background-color:  #FF832A;width: 30%;">
+
+  <hr class="col-12" style="height:3px ;width: 30%;background-color:  #ff6a00;">
+</div>
+    <p class="desc">The gradual accumulation of 
+information about atomic and 
+small-scale behaviour...</p> 
+</div>
+ 
+  </div>
+  <div class="card">
+<div class="card-body">
+ <img class="img-fluid"  src="img/svg/icons/IP services.svg" alt="company-img">
+    <p class="fw-bold">IP Services 
+</p>
+  <hr class="col-12" style="height:3px ;width: 30%;background-color: #808080;">
+    <p class="desc">The gradual accumulation of 
+information about atomic and 
+small-scale behaviour...</p> 
+
+</div>
+   
+  </div>
+  <div class="card">
+<div class="card-body">
+<img class="img-fluid"  src="img/svg/icons/legal services.svg" alt="company-img">
+    <p class="fw-bold">Legal Services </p>
+      <hr class="col-12" style="height:3px ;width: 30%;background-color: #808080;">
+    <p class="desc">The gradual accumulation of 
+information about atomic and 
+small-scale behaviour...</p> 
+
+</div>
+    
+  </div>
+  <div class="card">
+<div class="card-body">
+ <img class="img-fluid"  src="img/svg/icons/filings.svg" alt="company-img">
+    <p class="fw-bold">Filings & Compliances</p>
+      <hr class="col-12" style="height:3px ;width: 30%;background-color: #808080;">
+    <p class="desc">The gradual accumulation of 
+information about atomic and 
+small-scale behaviour...</p> 
+
+</div>
+   
+  </div>
+
+</div>
+
+
+
+
     </section>
-
-    <!-- FAQ Section -->
-
-    <section id="faq">
-      <div class="faq">
-        <h1 class="fw-bold" style="color: #000685; text-decoration: underline">
-          FAQ
-        </h1>
-
-        <!-- Accordion -->
-
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                <span class="h4" style="color: #929292; margin-right: 10px"
-                  >Q.
-                </span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                deleniti.
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-              
-
-                <i class="fas fa-arrow-right"></i>&nbsp;
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                deleniti.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                <span class="h4" style="color: #929292; margin-right: 10px"
-                  >Q.
-                </span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                deleniti.
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <i class="fas fa-arrow-right"></i>&nbsp;
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                deleniti.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                <span class="h4" style="color: #929292; margin-right: 10px"
-                  >Q.
-                </span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                deleniti.
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                 <i class="fas fa-arrow-right"></i>&nbsp;
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
-                deleniti.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pagination -->
-    <section id="pagination" class="container">
-      <nav aria-label="...">
-        <ul class="pagination justify-content-end">
-          <li class="page-item active" aria-current="page">
-            <span class="page-link">1</span>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-        </ul>
-      </nav>
-    </section>
-
-    <!-- Form modal  -->
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Coming Soon</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <iframe
-              style="width: 100%; height: 100%"
-              src="popup.html"
-              frameborder="0"
-            ></iframe>
-          </div>
-          <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
-        </div>
-      </div>
-    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Saving form data to Spreadsheet -->
-    <script>
-      const regForm = document.querySelector("#regForm");
-      regForm.addEventListener("submit", () => {
-        event.preventDefault();
-        const fullName = document.querySelector("#fullName");
-        const email = document.querySelector("#email");
-        const phone = document.querySelector("#phone");
-        const qual = document.querySelector("#qual");
-        const state = document.querySelector("#state");
-        const city = document.querySelector("#city");
-        const district = document.querySelector("#district");
-        const pincode = document.querySelector("#pincode");
-
-        const url =
-          "https://docs.google.com/forms/u/0/d/e/1FAIpQLSecZafUMyX1f7bSLyFA6SPUydZgsGA9KMtSZTHD5rbE23hYlg/formResponse";
-        fetch(url, {
-          method: "POST",
-          mode: "no-cors",
-          body: `entry.871115680=${fullName.value}&entry.1674383746=${phone.value}&entry.2040954737=${email.value}&entry.1950931961=${qual.value}&entry.850084149=${state.value}&entry.1755185299=${district.value}&entry.1732333113=${city.value}&entry.1203784172=${pincode.value}&dlut=1630327826558&fvv=1&draftResponse=%5Bnull%2Cnull%2C%226039705974122733004%22%5D&pageHistory=0&fbzx=6039705974122733004`,
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-        }).then((response) => {
-          // console
-          console.log("Data submitted successfully");
-          // fullName.value = "";
-          // email.value = "";
-          // phone.value = "";
-          // qual.value = "";
-          // state.value = "";
-          // city.value = "";
-          // district.value = "";
-          // pincode.value = "";
-          window.location.href = "/success.html";
-          
-          
-
-        });
-      });
-    </script>
   </body>
 </html>

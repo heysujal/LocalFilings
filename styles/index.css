@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow: hidden;
+  font-family: "Poppins";
+  background: url("../img/svg/peach-top-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  /* background-size: cover; */
+}
+
+.nav-link {
+  margin-right: 30px;
+  /* font-weight: bold; */
+  color: #000685 !important;
+}
+
+#join-now {
+  background-color: #000685;
+  color: white;
+  font-size: 15px;
+}
+
+/* Main */
+main {
+  /* margin-top: 20px; */
+}
+
+.l-side,
+.r-side {
+  flex: 1;
+  flex-basis: 100%;
+}
+/* left side */
+.l-side {
+  /* padding-right: 200px; */
+}
+
+.l-side h1 {
+  color: white;
+  font-size: 4rem;
+}
+
+.l-side p {
+  color: #575757;
+}
+
+.btn.get-started {
+  background-color: #000685;
+  color: white;
+  margin-right: 20px;
+  border-radius: 10px;
+  padding: 15px 50px;
+
+  font-size: 15px;
+}
+
+.btn.learn-more {
+  color: #000685;
+  font-weight: bold;
+  font-size: 15px;
+  border: 4px solid #808080;
+  border-radius: 10px;
+  padding: 15px 50px;
+}
+
+/* Right side */
+.r-side {
+  text-align: center;
+  /* vertical-align: middle; */
+}
+.r-side img {
+}
+
+/* Services */
+#services {
+  margin-top: 250px;
+}
+.services-title {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.services-title hr {
+  height: 3px;
+}
+
+/* Cards */
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 330px;
+  height: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.card-body p.desc {
+  margin-top: 5px;
+  color: #737373;
+}
+
+.card:nth-child(3) {
+  background-color: #000685;
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+  #join-now {
+    width: 50%;
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #join-now {
+    width: 40%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  #join-now {
+    width: 40%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  nav {
+    position: relative;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    right: 20px;
+  }
+
+  #navbar_top {
+    height: 80px;
+  }
+}
+
+/* for bigger screens */
+@media (min-width: 1201px) and (max-width: 2560px) {
+  #join-now {
+    padding: 15px 40px;
+    border-radius: 10px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    right: 20px;
+  }
+  #navbar_top {
+    height: 80px;
+  }
+}
