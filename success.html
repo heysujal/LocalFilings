@@ -36,13 +36,57 @@
          .hero{
             background-color: white;
          }
+#img1, #img2, #img3{
+     display: none;
+ }
+
+@media (min-width: 1201px) and (max-width: 2560px) {
+ #img1, #img2, #img3{
+     display: block;
+     z-index: 3;
+ }
+ 
+#img1{
+    position: absolute;
+width: 325px;
+height: 325px;
+left: 311px;
+top: -159px;
+
+}
+#img2{
+position: absolute;
+width: 325px;
+height: 325px;
+left: 1290px;
+top: 116px;
+
+transform: rotate(90deg);
+}
+#img3{
+
+position: absolute;
+width: 325px;
+height: 325px;
+left: 72px;
+top: 467px;
+transform: rotate(180deg);
+}
+
+}
+
+
+
     </style>
   </head>
   <body>
     <main>
+        
       <div class="container hero d-flex flex-column flex-md-row">
 
- <img src="" alt="">
+ <img class="img-fluid"  id="img1" src="/img/svg/semi-circle.svg" alt="semi-circle-img">
+ <img  class="img-fluid" id="img2" src="/img/svg/semi-circle.svg" alt="semi-circle-img">
+ <img  class="img-fluid" id="img3" src="/img/svg/semi-circle.svg" alt="semi-circle-img">
 
         <div class="l-side">
           <img
